@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-areas:
+    "header"
+    "nav"
+    "news"
+    "footer";
+}
+
+.header {
+    background-color: #1B1A17;
+    color: white;
+    font-family: 'league gothic', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    grid-area: header;
+}
+
+.nav {
+    background-color: #E45826;
+}
+
+.news {
+    background-color: #F0A500;
+}
+
+.title, .date {
+    margin: 20px;
+}
+
+.news-img {
+    text-align: center;
+}
+
+.news-body {
+    margin: 20px;
+}
+
+.footer {
+    background-color: #E6D5B8;
+}
+
+/* iPhone SE 375x667 */
+@media screen and (min-width: 375px) {
+    .container {
+    grid-template-rows: ;
+    grid-template-columns: ;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "news"
+    "footer";
+    }
+}
