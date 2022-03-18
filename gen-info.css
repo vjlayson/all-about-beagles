@@ -2,3 +2,116 @@
     box-sizing: border-box;
     margin: 0px;
 }
+
+.container {
+    display: grid;
+    width: 100vw;
+    grid-template-areas:
+    "header"
+    "nav"
+    "main-container"
+    "footer-container";
+}
+
+.header {
+    background-color: #1B1A17;
+    color: white;
+    font-family: 'league gothic', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    grid-area: header;
+}
+
+.nav {
+    background-color: #E45826;
+    display: flex;
+    justify-content: space-around;
+    height: 30px;
+    align-items: center;
+    font-size: 20px;
+}
+
+.gen-info2 {
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 35px;
+    text-align: center;
+}
+
+.beagle, .history, .personality, .health, .feeding {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+}
+
+.img-beagle {
+    float: left;
+    width: 400px;
+    padding: 20px;
+}
+
+.main-container {
+    background-color: #F0A500;
+    display: grid;
+
+}
+
+.footer-container {
+    background-color: #E6D5B8;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+}
+
+.footer1 {
+    grid-column: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.footer2 {
+    grid-column: 2/3;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer3 {
+    display: flex;
+    grid-column: 3/4;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+/* Extra small devices (phones, 610px and down) */
+@media screen and (max-width:700px) {
+    .footer-container {
+        grid-template-columns: 100%;
+    }
+    .footer1, .footer2, .footer3 {
+        grid-column: 1/2;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .beagle, .history, .personality, .health, .feeding {
+        width: 80%;
+        margin: auto;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .beagle, .history, .personality, .health, .feeding {
+        width: 100%;
+        padding: 10px;
+    }
+    .img-beagle {
+        width: 200px;
+    }
+}
