@@ -54,12 +54,12 @@ img {
     width: 60%;
     height: auto;
     float: left;
-    padding: 20px;
+    padding: 10px;
 }
 
 .news-body {
     margin: 20px;
-    padding: 50px;
+    padding: 10px;
 }
 
 .footer-container {
@@ -102,5 +102,9 @@ img {
     }
     .footer1, .footer2, .footer3 {
         grid-column: 1/2;
+    }
+    img {
+        width: 100%;
+        height: auto;
     }
 }
