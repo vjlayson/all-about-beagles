@@ -35,6 +35,57 @@
     background-color: #F0A500;
 }
 
+.inquire {
+    padding: 30px;
+    font-size: 35px;
+    text-align: center;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.image img {
+    width: 500px;
+}
+
+.inquiry-form {
+    display: grid;
+    grid-template-areas: 
+    "personal message"
+    "personal message"
+    "personal message"
+    "submit submit";
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(4, auto);
+    grid-gap: 1em;
+    background-color: #F0A500;
+}
+
+.personal {
+    grid-area: personal;
+}
+
+.message {
+    grid-area: message;
+}
+
+.submit {
+    grid-area: submit;
+}
+
+.personal label {
+    display: block;
+}
+
+.inquiry-form input:not([type="checkbox"]):not([type="radio"]), textarea, select {
+    width: 100%;
+    padding: 1em;
+    margin: 0.5em 0em;
+}
+
 .footer {
     background-color: #E6D5B8;
     display: grid;
@@ -69,14 +120,23 @@
 
 /* Extra small devices (phones, 610px and down) */
 @media screen and (max-width:610px) {
-    .footer-container {
+    .footer {
         grid-template-columns: 100%;
     }
     .footer1, .footer2, .footer3 {
         grid-column: 1/2;
     }
-    img {
-        width: 100%;
-        height: auto;
+    .inquiry-form {
+        display: grid;
+        grid-template-areas: 
+        "personal personal"
+        "personal personal"
+        "message message"
+        "message message"
+        "submit submit";
+        grid-template-columns: auto auto;
+        grid-template-rows: repeat(5, auto);
+        grid-gap: 1em;
+        background-color: #F0A500;
     }
 }

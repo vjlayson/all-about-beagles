@@ -62,7 +62,7 @@ img {
     padding: 10px;
 }
 
-.footer-container {
+.footer {
     background-color: #E6D5B8;
     display: grid;
     grid-template-columns: 33.33% 33.33% 33.33%;
@@ -97,7 +97,7 @@ img {
 
 /* Extra small devices (phones, 610px and down) */
 @media screen and (max-width:610px) {
-    .footer-container {
+    .footer {
         grid-template-columns: 100%;
     }
     .footer1, .footer2, .footer3 {

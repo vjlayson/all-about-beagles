@@ -21,7 +21,49 @@
             <div class="rescue-groups"><a href="rescue.html">Rescue Groups</a></div>
         </div>
         <div class="main">
-            Main subscribe
+            <div class="inquire">Subscribe</div>
+            <div class="image">
+                <img src="img/beagle2.png" alt="beagle">
+            </div>
+            <form action="" class="subscribe-form">
+                <fieldset class="part1">
+                    <legend>Part 1</legend>
+                    <label for="name">Name</label>
+                    <input type="text" name="name">
+                    <label for="phone">Phone</label>
+                    <input type="text" name="phone">
+                    <label for="address">Address</label>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <label for="email">Email</label>
+                    <input type="text" name="email">
+                    <label for="birthday">Birthday</label>
+                    <input type="date">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" min="1" max="100">
+                </fieldset>
+                <fieldset class="part2">
+                    <legend>Part 2</legend>
+                    <label for="question1">Do you have a beagle?</label><br>
+                    <input type="radio" name="beagle" value="yes">Yes
+                    <input type="radio" name="beagle" value="no">No <br><br>
+                    <label for="question2">Receive updates via email?</label><br>
+                    <input type="radio" name="email" value="no">No
+                    <input type="radio" name="email" value="Daily">Daily
+                    <input type="radio" name="email" value="Weekly">Weekly
+                    <input type="radio" name="email" value="Monthly">Monthly <br><br>
+                    <label for="reason">Reason for joining:</label>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <label for="question3">How did you find us?</label><br>
+                    <select name="dropdown">
+                        <option value="friend" selected>Friend</option>
+                        <option value="google">Google</option>
+                        <option value="facebook">Facebook</option>
+                        <option value="instagram">Instagram</option>
+                        <option value="twitter">Twitter</option>
+                    </select>
+                </fieldset>
+                <input type="submit" value="Subscribe" class="subscribe">
+            </form>
         </div>
         <div class="footer">
             <div class="footer1">
